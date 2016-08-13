@@ -11,7 +11,7 @@ the module are simular to OOP classes, and a module should be immediatly invoked
 ###Pattern
 
 var instanceModule = (function(additionalParameters) {
-
+```javascript
     //keepping variables and functions private here
 
     //return an object that will contains the public properties/methods
@@ -20,7 +20,7 @@ var instanceModule = (function(additionalParameters) {
     }
 
 })(additionalParameters);
-
+```
 ##Observer Pattern
 
 Observer pattern is used when change of one application part need to update the other parts.
@@ -29,6 +29,8 @@ if an object is changed it broadcasts to dependent objects that a change has occ
 ![alt tag](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/1000px-Observer.svg.png)
 
 ###Pattern
+
+```javascript
 	var Observer = function(){
 		return {
 			notify: function(){..}
@@ -49,32 +51,33 @@ if an object is changed it broadcasts to dependent objects that a change has occ
 			}
 		}
 	}
-
+```
 ##Prototype Pattern
 
 The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects
 
 ![alt tag](https://upload.wikimedia.org/wikipedia/commons/1/14/Prototype_UML.svg)
 
+```javascript
+	var Constructor = function() {
+	  this.property = "";
+	}
 
-var Constructor = function() {
-  this.property = "";
-}
-
-Constructor.prototype.method = function() {
-  //implement common behavior between all instances
-}
-
+	Constructor.prototype.method = function() {
+	  //implement common behavior between all instances
+	}
+```
 
 ###Caution
 
 Never replace the prototype instance or if you did that make sure you add the reference to the current constructor: 
 
+```javascript
 	Constructor.prototype ={
 		constructor:Constructor,
 		....
 	}
-
+```
 ##Singleton Pattern
 
 The Singleton restricts clients from creating multiple objects, after the first object created, it will return instances of itself.
@@ -86,7 +89,11 @@ The Singleton restricts clients from creating multiple objects, after the first 
 
 we can get a singleton just by using the literal object 
 
+```javascript
 	var singletonInstance  = {
 		method:function(){},
 		propery:""
 	}
+```
+
+@Ali-Amechghal
