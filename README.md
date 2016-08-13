@@ -80,7 +80,7 @@ Never replace the prototype instance or if you did that make sure you add the re
 The Singleton restricts clients from creating multiple objects, after the first object created, it will return instances of itself.
 
 
-![alt tag](https://en.wikipedia.org/wiki/Singleton_pattern#/media/File:Singleton_pattern_uml.png)
+![alt tag](https://upload.wikimedia.org/wikipedia/commons/d/dc/Singleton_pattern_uml.png)
 
 ###NB
 
