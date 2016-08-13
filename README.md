@@ -9,9 +9,9 @@ Keep particular code independent of others components, this called loose couplin
 the module are simular to OOP classes, and a module should be immediatly invoked function expression (IIFE).
 
 ###Pattern
+```javascript
 
 var instanceModule = (function(additionalParameters) {
-```javascript
     //keepping variables and functions private here
 
     //return an object that will contains the public properties/methods
@@ -59,6 +59,7 @@ The prototype pattern is a creational design pattern in software development. It
 ![alt tag](https://upload.wikimedia.org/wikipedia/commons/1/14/Prototype_UML.svg)
 
 ```javascript
+
 	var Constructor = function() {
 	  this.property = "";
 	}
