@@ -4,6 +4,8 @@ the module are simular to OOP classes, and a module should be immediatly invoked
 
 ##Pattern
 
+```javascript
+
 var instanceModule = (function(additionalParameters) {
 
     //keepping variables and functions private here
@@ -14,5 +16,5 @@ var instanceModule = (function(additionalParameters) {
     }
 
 })(additionalParameters);
-
+```
 
