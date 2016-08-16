@@ -23,6 +23,9 @@ if an object is changed it broadcasts to dependent objects that a change has occ
 			unregistreObserver:function(observer){
 				//remove observer object from observers array
 			},
+			notifyObserver:function(observer){
+				//notify given observer if its already registered
+			},
 			notifyObservers:function(){
 				//walk through observers array and call notify method
 			}
