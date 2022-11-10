@@ -4,11 +4,11 @@ Common Javascript design patterns or the most used ones
 
 ![alt tag](http://tattoocollection.in/wp-content/uploads/Wonderful-Tribal-Tattoo-On-Biceps-For-Men-9.gif)
 
-##Module Pattern
+## Module Pattern
 Keep particular code independent of others components, this called loose coupling in OOP.
 the module are simular to OOP classes, and a module should be immediatly invoked function expression (IIFE).
 
-###Pattern
+### Pattern
 ```javascript
 
 var instanceModule = (function(additionalParameters) {
@@ -21,14 +21,14 @@ var instanceModule = (function(additionalParameters) {
 
 })(additionalParameters);
 ```
-##Observer Pattern
+## Observer Pattern
 
 Observer pattern is used when change of one application part need to update the other parts.
 if an object is changed it broadcasts to dependent objects that a change has occured.
 
 ![alt tag](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/1000px-Observer.svg.png)
 
-###Pattern
+### Pattern
 
 ```javascript
 	var Observer = function(){
@@ -52,7 +52,7 @@ if an object is changed it broadcasts to dependent objects that a change has occ
 		}
 	}
 ```
-##Prototype Pattern
+## Prototype Pattern
 
 The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects
 
@@ -79,7 +79,7 @@ Never replace the prototype instance or if you did that make sure you add the re
 		....
 	}
 ```
-##Singleton Pattern
+## Singleton Pattern
 
 The Singleton restricts clients from creating multiple objects, after the first object created, it will return instances of itself.
 
